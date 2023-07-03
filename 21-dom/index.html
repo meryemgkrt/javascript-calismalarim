@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Dom</title>
+    <style></style>
+  </head>
+  <body>
+    
+    <h2>Öğrenci Listesi</h2>
+    <ul class="list">
+      <li class="list-item">Ali</li class="list-item">
+      <li class="list-item">Veli</li class="list-item">
+      <li class="list-item">Ahmet</li class="list-item">
+      <li class="list-item">Mehmet</li class="list-item">
+    </ul>
+    <h2>Öğrenci Listesi</h2>
+    <ul class="list">
+      <li class="list-ite">Ali</li class="list-item">
+      <li class="list-ite">Veli</li class="list-item">
+      <li class="list-ite">Ahmet</li class="list-item">
+      <li class="list-ite">Mehmet</li class="list-item">
+    </ul>
+    <script>
+     
+   const listItem = document.querySelectorAll(".list li")
+    /* for(let i =0; i<listItem.length; i++){
+      listItem[i].style.color="red";
+      
+     } */
+     const listIte = document.querySelectorAll(".list li")
+     for(let list of listItem){
+      list.style.color="red"
+      
+     }
+     for(let list of listIte){
+      list.style.color="blue"
+     }
+        </script>
+  </body>
+</html>
